@@ -1,16 +1,25 @@
 # Mambattu/homebrew-tap
 
 ```sh
-brew install --cask mambattu/tap/orca      # stable
-brew install --cask mambattu/tap/orca@rc   # release candidates
+brew tap mambattu/tap
 ```
 
-`orca` is a signed fork build of [stablyai/orca](https://github.com/stablyai/orca), released from
-[Mambattu/orca](https://github.com/Mambattu/orca). It installs as `Orca.app` and replaces an
-upstream install; the in-app updater follows this fork's releases. Casks are bumped automatically
-by the fork's release workflow.
+| Name | Install | What it is |
+|---|---|---|
+| [orca](https://github.com/Mambattu/orca) | `brew install --cask mambattu/tap/orca` | Signed build of [stablyai/orca](https://github.com/stablyai/orca) with Mambattu patches. Installs as `Orca.app`, replaces an upstream install, and updates itself from Mambattu/orca releases. |
+| orca@rc | `brew install --cask mambattu/tap/orca@rc` | Release candidates of the above. |
+| [buzz-backend-docker](https://github.com/abipalli/buzz-backend-docker) | `brew install mambattu/tap/buzz-backend-docker` | Run Buzz agents on your own server: remote-agent backend for any Docker host. |
+
+Formulae and casks are published by each project's release workflow; don't edit them by hand.
+
+Moved from `abipalli/tap`. The old name still resolves, but to switch cleanly:
+
+```sh
+brew untap abipalli/tap && brew tap mambattu/tap
+```
 
 ## Problems
 
-Open an issue on the project the formula or cask comes from:
-[Mambattu/orca](https://github.com/Mambattu/orca/issues) for `orca` and `orca@rc`.
+Open a GitHub issue on the project the formula or cask comes from:
+[Mambattu/orca](https://github.com/Mambattu/orca/issues) for `orca` and `orca@rc`,
+[abipalli/buzz-backend-docker](https://github.com/abipalli/buzz-backend-docker/issues) for `buzz-backend-docker`.

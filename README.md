@@ -9,3 +9,8 @@ brew install --cask mambattu/tap/orca@rc   # release candidates
 [Mambattu/orca](https://github.com/Mambattu/orca). It installs as `Orca.app` and replaces an
 upstream install; the in-app updater follows this fork's releases. Casks are bumped automatically
 by the fork's release workflow.
+
+## Problems
+
+Open an issue on the project the formula or cask comes from:
+[Mambattu/orca](https://github.com/Mambattu/orca/issues) for `orca` and `orca@rc`.

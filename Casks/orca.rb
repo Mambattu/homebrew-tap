@@ -5,10 +5,10 @@ cask "orca" do
   sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
          intel: "0000000000000000000000000000000000000000000000000000000000000000"
 
-  url "https://github.com/mambattu-dev/orca/releases/download/v#{version}/orca-macos-#{arch}.dmg"
+  url "https://github.com/Mambattu/orca/releases/download/v#{version}/orca-macos-#{arch}.dmg"
   name "Orca"
   desc "Fork build of the IDE for orchestrating AI coding agents across terminals and worktrees"
-  homepage "https://github.com/mambattu-dev/orca"
+  homepage "https://github.com/Mambattu/orca"
 
   livecheck do
     url :url

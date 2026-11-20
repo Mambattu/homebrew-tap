@@ -5,13 +5,13 @@ cask "orca@rc" do
   sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
          intel: "0000000000000000000000000000000000000000000000000000000000000000"
 
-  url "https://github.com/mambattu-dev/orca/releases/download/v#{version}/orca-macos-#{arch}.dmg"
+  url "https://github.com/Mambattu/orca/releases/download/v#{version}/orca-macos-#{arch}.dmg"
   name "Orca RC"
   desc "Fork build of the IDE for orchestrating AI coding agents across terminals and worktrees"
-  homepage "https://github.com/mambattu-dev/orca"
+  homepage "https://github.com/Mambattu/orca"
 
   livecheck do
-    url "https://github.com/mambattu-dev/orca"
+    url "https://github.com/Mambattu/orca"
     regex(/^v?(\d+(?:\.\d+)+-rc\.\d+)$/i)
     strategy :github_releases do |json, regex|
       json.map do |release|

@@ -2,6 +2,7 @@
 
 ```sh
 brew tap mambattu/tap
+brew trust mambattu/tap   # newer Homebrew refuses untrusted third-party taps
 ```
 
 | Name | Install | What it is |
@@ -15,7 +16,7 @@ Formulae and casks are published by each project's release workflow; don't edit 
 Moved from `abipalli/tap`. The old name still resolves, but to switch cleanly:
 
 ```sh
-brew untap abipalli/tap && brew tap mambattu/tap
+brew untap abipalli/tap && brew tap mambattu/tap && brew trust mambattu/tap
 ```
 
 ## Problems

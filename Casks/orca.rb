@@ -1,9 +1,9 @@
 cask "orca" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.4.265"
-  sha256 arm:   "0000000000000000000000000000000000000000000000000000000000000000",
-         intel: "0000000000000000000000000000000000000000000000000000000000000000"
+  version "1.4.266"
+  sha256 arm:   "9abb08540c9b6b04ee015ef29e0b30bcf2cc01c5e560419abee30696718f264d",
+         intel: "85166d84cbe447005566941f67b83246a5cebedb19eceb3db544f1a614f26a21"
 
   url "https://github.com/Mambattu/orca/releases/download/v#{version}/orca-macos-#{arch}.dmg"
   name "Orca"
